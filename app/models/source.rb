@@ -34,6 +34,8 @@ module TrafficSpy
       payloads.group(:event).count.map { |key, value| [key.name.to_sym, value] }.reverse.to_h
     end
 
+
+
     private
 
     def get_url(payload)
